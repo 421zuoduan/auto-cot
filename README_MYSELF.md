@@ -1,3 +1,69 @@
+# Code
+
+## 配环境
+
+auto-cot 的 readme 里的环境比较难配, 我换了一些邻近的版本
+
+```
+conda create -n auto-cot python=3.9
+conda activate auto-cot
+pip install torch==1.11.0
+pip install torchtext==0.12.0
+pip install scikit-learn
+pip install matplotlib
+pip install sentence-transformers
+pip install jupyter
+pip insatll numpy==1.23.0
+```
+
+## 添加数据集
+
+将数据集[下载](https://github.com/kojima-takeshi188/zero_shot_cot/tree/main/dataset)到 `./dataset` 路径下; 手动创建 `experiment` 文件夹, 并建立无后缀的数据集同名文件
+
+
+## 配置api
+
+```
+export OPENAI_API_KEY=...
+```
+
+## 运行
+
+```
+python run_inference.py \
+--dataset multiarith \
+--demo_path demos/multiarith \
+--output_dir experiment/multiarith
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----
+
+以下无用
+
+
 # 调用 gpt-3.5-turbo
 
 ## 举个栗子
