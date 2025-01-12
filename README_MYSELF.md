@@ -42,4 +42,7 @@ print(reply)
 3. **tools**
 4. **tool_choice**
 5. **stream**
-6. 
+
+
+
+re
